@@ -33,7 +33,7 @@ Here is a breakdown of the structure for a single entry:
 ```
 - `input`: (String) The full text transcript of the earnings call.
 - `mp3_id`: (String) The unique identifier for the corresponding MP3 audio file, located in the mp3_YYYY folder. The full filename is [mp3_id].mp3.
-- `ppt_id`: (String) The unique identifier for the corresponding presentation slides, located in the ppt_YYYY folder. The full filename is [ppt_id].pptx.
+- `ppt_id`: (String) The unique identifier for the corresponding presentation slides, located in the ppt_YYYY folder. The full filename is [ppt_id].pdf.
 - `label`: (Integer) The ground-truth label for the data sample (e.g., 0 or 1).
 
 ## 📢 Data Availability Notice
@@ -82,7 +82,7 @@ mp3_file_path = os.path.join(MP3_FOLDER, f"{mp3_id}.mp3")
 
 # 3. Construct the PPT file path
 ppt_id = call_data.get("ppt_id")
-ppt_file_path = os.path.join(PPT_FOLDER, f"{ppt_id}.pptx")
+ppt_file_path = os.path.join(PPT_FOLDER, f"{ppt_id}.pdf")
 
 # 4. Get the ground truth label
 ground_truth = call_data.get("label")
