@@ -36,9 +36,16 @@ Here is a breakdown of the structure for a single entry:
 - `ppt_id`: (String) The unique identifier for the corresponding presentation slides, located in the ppt_YYYY folder. The full filename is [ppt_id].pdf.
 - `label`: (Integer) The ground-truth label for the data sample (e.g., 0 or 1).
 
-## 📢 Data Availability Notice
+## 📢 Full Dataset Download
 
-Please note: Currently, only the data for 2019 (transcripts, mp3, and ppt files) is partially available. The complete multimodal data, including the corresponding mp3 and ppt files, will be released publicly upon acceptance of our work.
+Please note: This GitHub repository contains all the conference call text transcripts (in json) but only a small sample of the large MP3 and PPT files for 2019 to keep the repository lightweight.
+
+The complete multimodal dataset (all MP3 and PPT files for 2019-2021) is hosted on Google Drive due to its size. Download from [here](https://drive.google.com/drive/folders/1gdoRW2jhHQzabyzuCdJMGECUhw5eZ2-6?usp=sharing).
+
+To ensure the code works correctly, follow these steps after downloading:
+1. Download all the .zip files from the Google Drive link.
+2. Unzip each file (e.g., mp3_2019.zip, ppt_2019.zip, etc.).
+3. Place the resulting folders (mp3_2019, ppt_2019, etc.) in the root of this project directory, so they are alongside the transcripts_YYYY.json files.
 
 ## Usage Example
 
